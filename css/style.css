@@ -1,0 +1,300 @@
+/**
+Site: Agree;
+
+*/
+
+/**
+ * Table of Contents
+ * 1.0 - Reset CSS
+ * 2.0 - General
+ 	* 2.1 - Colors & Fonts guide
+ 	* 2.2 - Buttons
+ 	* 2.3 - Imgs
+ 	* 2.4 - Headers
+ 	* 2.5 - Child cover
+ 	* 2.6 - BTT
+ * 3.0 - Navbar
+ 
+ * 14.0 - Responsive
+ 	* 14.1 - Mobile
+ 		* 14.1.1 - Index
+
+		* 14.1.4 - General
+ 	* 14.2 - Tablet
+ 		* 14.2.1 - Index
+
+		* 14.2.4 - General
+ 	* 14.3 - Desktop
+  		* 14.3.1 - Index
+
+		* 14.4.4 - General
+ * 15.0 - Landing
+ */
+
+
+/* =====================
+   1.0 Reset css
+   ===================== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img{
+	max-width: 100%;
+}
+
+html{
+	font-family: 'Montserrat Regular';
+}
+
+
+/* =====================
+    2.0 General
+   ===================== */
+
+/* 2.1 Colors & Fonts guide
+------------------------
+*/
+
+
+/*Color reference
+
+Blue: #20242f;
+Green: #3de9be;
+Light text: #4b586a;
+Lighter text: #8c8f94;
+Gray: 2b2f3a;
+Background gray: #f8fafc;
+
+*/
+
+/*Font reference
+
+font-family: 'source_sans_prosemibold';
+font-family: 'source_sans_proregular';
+font-family: 'source_sans_prolight';
+font-family: 'Montserrat UltraLight';
+font-family: 'Montserrat Light';
+font-family: 'Montserrat Regular';
+font-family: 'Montserrat SemiBold';
+font-family: 'Montserrat Bold';
+font-family: 'Montserrat ExtraBold';
+font-family: 'Montserrat Black';
+font-family: 'GT Walsheim Pro';
+
+*/
+
+
+/* 2.2 Buttons
+------------------------
+*/
+
+.btn{
+	border-radius: 80px;
+    padding: 6px 26px;
+    text-transform: uppercase;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    -webkit-transition: .3s; /* Safari */
+    transition: .3s;
+}
+
+button:hover,
+.btn{
+	cursor: pointer;
+}
+
+.btn-primary{
+	background-color: #3de9be;
+	border:  solid 2px #3de9be;
+	color: #2b2f3a;
+}
+
+.btn-primary:hover,
+.btn-primary:active{
+	background-color: transparent;
+	border:  solid 2px #3de9be;
+	color: #fff!important;
+}
+
+.btn-secondary{
+	background-color: #fff;
+	border:  solid 2px #3de9be;
+	color: #2b2f3a;
+}
+
+.btn-secondary:hover,
+.btn-secondary:active{
+	background-color: #3de9be;
+	border:  solid 2px #3de9be;
+
+}
+
+.btn-secondary-nb{
+	background-color: #fff;
+	border:  solid 2px #fff;
+	color: #2b2f3a;
+}
+
+.btn-secondary-nb:hover,
+.btn-secondary-nb:active{
+	background-color: #2b2f3a;
+	border:  solid 2px #fff;
+	color: #fff;
+}
+
+.btn-alt,
+.btn-alt:hover,
+.btn-alt:active{
+	padding: 7px 30px 7px 50px;
+	background-color: #20242f;
+	color: #3de9be;
+}
+
+
+.btn-alt i{
+    position: absolute;
+    left: 28px;
+    top: 11px;
+    -webkit-transition: .3s; /* Safari */
+    transition: .3s;
+}
+
+.btn-alt:hover i,
+.btn-alt:active i{
+	left: 24px;
+}
+
+
+/* 2.3 Imgs
+------------------------
+*/
+
+.imgContainer img{
+	width: 100%;
+	border-radius: 10px;
+   	-webkit-box-shadow: 0 9px 68px 0 rgba(62,57,107,.2);
+   box-shadow: 0 9px 68px 0 rgba(62,57,107,.2);
+}
+
+/* 2.4 Headers
+------------------------
+*/
+
+h2 {
+    font-family: 'GT Walsheim Pro';
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+h3{
+	font-family: 'GT Walsheim Pro';
+	margin-bottom: 10px;
+	font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+/* =====================
+    14.0 Responsive
+   ===================== */
+
+/* 14.1 Mobile
+------------------------
+*/
+
+
+
+@media screen and (max-width: 767px) {
+
+
+}
+
+@media screen and (max-width: 576px) {
+
+
+}
+
+/* 15.2 Tablet
+------------------------
+*/
+
+
+/* 15.2.1 Index */	
+
+@media screen and (max-width: 991px) {
+
+
+}
+
+
+/* 15.3 Desktop
+------------------------
+*/
+
+/* 15.1.1 Index */
+
+@media screen and (min-width: 768px) {
+
+	
+}
+
+@media screen and (min-width: 992px) {
+
+
+
+}
+
+@media screen and (min-width: 1199px) {
+
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
