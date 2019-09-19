@@ -11,10 +11,15 @@ Site: Agree;
  	* 2.2 - Buttons
  	* 2.3 - Imgs
  	* 2.4 - Headers
- 	* 2.5 - Child cover
- 	* 2.6 - BTT
+ 	* 2.5 Global Classes
+ 	
  * 3.0 - Navbar
- 
+ * 4.0 - Cover
+
+
+
+ * 13.0 - BTT
+
  * 14.0 - Responsive
  	* 14.1 - Mobile
  		* 14.1.1 - Index
@@ -63,6 +68,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background-color: #E6E7E8;
 }
 ol, ul {
 	list-style: none;
@@ -100,12 +106,16 @@ html{
 
 /*Color reference
 
-Blue: #20242f;
-Green: #3de9be;
-Light text: #4b586a;
-Lighter text: #8c8f94;
-Gray: 2b2f3a;
-Background gray: #f8fafc;
+Background: #E6E7E8;
+Red: #DF3F65;
+Orange: #E25744;
+Yellow: #EFCE5A;
+
+Cyan: #2494B9;
+Purple: #862BA4;
+Green: #67BE9B;
+
+Dark: #404952;
 
 */
 
@@ -238,6 +248,85 @@ h3{
     font-weight: 600;
 }
 
+/* 2.5 Global Classes
+------------------------
+*/
+
+.d-none {
+	display: none;
+}
+
+.d-grid {
+	display: grid;
+}
+
+/* =====================
+    4.0 Cover 
+   ===================== */
+
+.cover {
+	height: 100vh;
+    padding-top: 15vh;
+}
+
+.cover .eyes {
+	grid-template-columns: 20% auto 20%;
+}
+
+.cover .eyes .eye {
+	width: 100%;
+  	padding-top: 100%; /* 1:1 Aspect Ratio */
+	border-radius: 50%;
+	background: linear-gradient( -45deg, #EFCE5A, #EFCE5A 49%, transparent 49%, transparent 51%, #DF3F65 51% ); 
+}
+
+.cover .mouth {
+	margin-top: 10vh;
+}
+
+.cover .mouth .lips {
+	width: 80%;
+	margin: auto;
+	padding: 2%;
+    border-radius: 5px;
+	background-color: #862BA4;
+}
+
+.cover .mouth .lips .tooth {
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-column-gap: 2%;
+
+
+}
+
+.cover .mouth .lips .tooth .teeth {
+	width: 100%;
+	padding-top: 100%; /* 1:1 Aspect Ratio */
+	background-color: #DF3F65;
+}
+
+.cover .mouth .chin {
+	width: 60%;
+	height: 20px;
+	margin: 10px auto;
+    border-radius: 5px;
+	background-color: #404952;
+}
+
+/*
+
+Background: #E6E7E8;
+Red: #DF3F65;
+Orange: #E25744;
+Yellow: #EFCE5A;
+
+Cyan: #2494B9;
+Purple: #862BA4;
+Green: #67BE9B;
+
+Dark: #404952;
+
+*/
 
 
 /* =====================
