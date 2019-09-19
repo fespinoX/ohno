@@ -15,6 +15,11 @@ Site: Agree;
  	
  * 3.0 - Navbar
  * 4.0 - Cover
+ * 5.0 - Fespi
+ * 6.0 - Bla
+ * 7.0 - Portfolio
+ * 8.0 - Things
+ * 9.0 - Contact
 
 
 
@@ -313,6 +318,58 @@ h3{
 	background-color: #404952;
 }
 
+/* =====================
+    5.0 Fespi
+   ===================== */
+
+.fespi {
+	height: 100vh;
+}
+
+.fespi h2 {
+	color: #404952;
+}
+
+.fespi span {
+	display: block;
+	color: #404952;
+	text-align: center;
+}
+
+
+/* =====================
+    6.0 Bla
+   ===================== */
+
+.bla {
+	height: 100vh;
+}
+
+.bla h3 {
+	text-align: right;
+	font-size: 200px;
+	color: #404952;
+}
+
+.bla p {
+	color: #404952;
+}
+
+
+/* =====================
+    7.0 Portfolio
+   ===================== */
+
+/* =====================
+    8.0 Things
+   ===================== */
+
+/* =====================
+    9.0 Contact
+   ===================== */      
+
+
+
 /*
 
 Background: #E6E7E8;
@@ -328,6 +385,20 @@ Dark: #404952;
 
 */
 
+
+/* =====================
+    13.0 BTT
+   ===================== */
+
+
+.btt {
+    display: inline;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+}
 
 /* =====================
     14.0 Responsive
