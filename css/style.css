@@ -262,7 +262,15 @@ h3{
 }
 
 .d-grid {
-	display: grid;
+	display: -ms-grid; /* IE 10 */
+  	display:     grid; /* None yet */
+}
+
+.d-flex {
+	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  	display: -ms-flexbox;  /* TWEENER - IE 10 */
+  	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  	display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
 }
 
 /* =====================
@@ -324,16 +332,28 @@ h3{
 
 .fespi {
 	height: 100vh;
+    align-items: center;
 }
 
-.fespi h2 {
+.fespi .my-name {
+	margin: auto;
+}
+
+.fespi .my-name h2 { 
+	font-size: 6rem;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
 	color: #404952;
 }
 
-.fespi span {
+.fespi .my-name span {
 	display: block;
 	color: #404952;
 	text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 0.86rem;
+
 }
 
 
@@ -343,16 +363,18 @@ h3{
 
 .bla {
 	height: 100vh;
+	align-items: center;
 }
 
 .bla h3 {
 	text-align: right;
-	font-size: 200px;
+	font-size: 12rem;
 	color: #404952;
 }
 
 .bla p {
 	color: #404952;
+	font-family: 'Montserrat Regular';
 }
 
 
@@ -360,9 +382,49 @@ h3{
     7.0 Portfolio
    ===================== */
 
+   
+
 /* =====================
     8.0 Things
    ===================== */
+
+   .things {
+		height: 100vh;
+		align-items: center;
+   }
+
+   .things .things-left {
+   		text-align: right;
+   }
+
+   .things .things-left  ul li:first-of-type {
+		margin-bottom: 20px;
+   }
+
+   .things .things-left h4 {
+   		font-size: 1.4rem;
+   		font-family: 'GT Walsheim Pro';
+   }
+
+   .things .things-left p:last-of-type {
+   		font-family: 'Montserrat Light';
+   	}
+
+   	.things .things-right li {
+   		display: inline-block;
+   		font-family: 'Montserrat Light';
+   	}
+
+   	.things .things-right li:not(last-of-type):after {
+		height: 14px;
+		vertical-align: middle;
+		margin: 0 5px 0 8px;
+	    font-size: 10px;
+	    display: inline-block;
+	    content: "\f111";
+   		font-family: 'Font Awesome 5 Free';
+   		color: #DF3F65;
+   	}
 
 /* =====================
     9.0 Contact
