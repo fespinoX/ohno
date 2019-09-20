@@ -9,9 +9,7 @@ Site: Agree;
  * 2.0 - General
  	* 2.1 - Colors & Fonts guide
  	* 2.2 - Buttons
- 	* 2.3 - Imgs
- 	* 2.4 - Headers
- 	* 2.5 Global Classes
+ 	* 2.3 - Global Classes
  	
  * 3.0 - Navbar
  * 4.0 - Cover
@@ -223,37 +221,9 @@ button:hover,
 }
 
 
-/* 2.3 Imgs
-------------------------
-*/
 
-.imgContainer img{
-	width: 100%;
-	border-radius: 10px;
-   	-webkit-box-shadow: 0 9px 68px 0 rgba(62,57,107,.2);
-   box-shadow: 0 9px 68px 0 rgba(62,57,107,.2);
-}
 
-/* 2.4 Headers
-------------------------
-*/
-
-h2 {
-    font-family: 'GT Walsheim Pro';
-    margin-bottom: 40px;
-    font-size: 24px;
-    font-weight: 600;
-    text-align: center;
-}
-
-h3{
-	font-family: 'GT Walsheim Pro';
-	margin-bottom: 10px;
-	font-size: 20px;
-    font-weight: 600;
-}
-
-/* 2.5 Global Classes
+/* 2.3 Global Classes
 ------------------------
 */
 
@@ -340,20 +310,32 @@ h3{
 }
 
 .fespi .my-name h2 { 
+	margin-bottom: 20px;
 	font-size: 6rem;
     letter-spacing: 1rem;
     text-transform: uppercase;
 	color: #404952;
 }
 
+.fespi .my-name h2 i {
+	color: #DF3F65;
+}
+
 .fespi .my-name span {
 	display: block;
+	margin-bottom: 20px;
 	color: #404952;
 	text-align: center;
     text-transform: uppercase;
     font-size: 2rem;
     letter-spacing: 0.86rem;
+}
 
+.fespi .name-separator {
+    width: 20%;
+    height: 5px;
+    margin: 10px 40%;
+    background-color: #DF3F65;
 }
 
 
@@ -367,14 +349,28 @@ h3{
 }
 
 .bla h3 {
-	text-align: right;
-	font-size: 12rem;
+	font-family: 'GT Walsheim Pro';
+    font-size: 7rem;
+    line-height: 6rem;
+    text-align: left;
 	color: #404952;
+}
+
+.bla h3:after {
+	content: ".";
+	color: #DF3F65;
+	font-size: 15rem;
 }
 
 .bla p {
 	color: #404952;
 	font-family: 'Montserrat Regular';
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.bla p:nth-of-type(2) {
+	font-family: 'Montserrat Bold';
 }
 
 
@@ -382,7 +378,13 @@ h3{
     7.0 Portfolio
    ===================== */
 
-   
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
 
 /* =====================
     8.0 Things
@@ -474,11 +476,17 @@ Dark: #404952;
 
 @media screen and (max-width: 767px) {
 
+	html {
+		font-size: 14px;
+	}
 
 }
 
 @media screen and (max-width: 576px) {
 
+	html {
+		font-size: 12px;
+	}
 
 }
 
@@ -486,8 +494,6 @@ Dark: #404952;
 ------------------------
 */
 
-
-/* 15.2.1 Index */	
 
 @media screen and (max-width: 991px) {
 
@@ -499,21 +505,35 @@ Dark: #404952;
 ------------------------
 */
 
-/* 15.1.1 Index */
 
 @media screen and (min-width: 768px) {
 
-	
+	html {
+		font-size: 16px;
+	}
+
+	.bla h3 {
+		text-align: right;
+		line-height: 11rem;
+	}
+
 }
 
 @media screen and (min-width: 992px) {
 
-
+	.bla h3 {
+		font-size: 10rem;
+		line-height: 8rem;
+	}
 
 }
 
 @media screen and (min-width: 1199px) {
-
+	
+	.bla h3 {
+		font-size: 12rem;
+		line-height: 7rem;
+	}
 
 }
 
