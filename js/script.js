@@ -22,7 +22,7 @@ $(window).on("scroll", function() {
 
 
  
-    $("#owl-demo").owlCarousel({
+    $("#owl-portfolio").owlCarousel({
    
         nav : true,
         slideSpeed : 300,

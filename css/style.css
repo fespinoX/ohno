@@ -378,10 +378,41 @@ button:hover,
     7.0 Portfolio
    ===================== */
 
-#owl-demo .item img{
+.portfolio {
+	height: 100vh;
+}
+
+.portfolio .owl-portfolio .item img{
     display: block;
     width: 100%;
     height: auto;
+}
+
+.portfolio .owl-portfolio .item .pf-info {
+	width: 30%;
+	position: absolute;
+	right: 5%;
+	bottom: 5%;
+	padding: 20px;
+	background-color: #E6E7E8;
+}
+
+.portfolio .owl-portfolio .item .pf-info h4 {
+	font-size: 1.2rem;
+	font-family: 'GT Walsheim Pro';
+	color: #404952;
+}
+
+.portfolio .owl-portfolio .item .pf-info .pf-url a {
+	color: #DF3F65;
+}
+
+.portfolio .owl-portfolio .item .pf-info .pf-tech {
+	font-family: 'Montserrat Light';
+}
+
+.portfolio .owl-portfolio .item .pf-info .pf-desc {
+	color: #404952;
 }
 
 
