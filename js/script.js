@@ -30,7 +30,8 @@ $(window).on("scroll", function() {
         itemsDesktop : false,
         itemsDesktopSmall : false,
         itemsTablet: false,
-        itemsMobile : false
+        itemsMobile : false,
+        lazyLoad: true
    
     });
  

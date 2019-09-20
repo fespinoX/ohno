@@ -93,8 +93,10 @@ img{
 	max-width: 100%;
 }
 
-html{
+html p, 
+html span {
 	font-family: 'Montserrat Regular';
+	color: #404952;
 }
 
 
@@ -142,6 +144,16 @@ font-family: 'GT Walsheim Pro';
 /* 2.2 Buttons
 ------------------------
 */
+
+a {
+	color: #DF3F65;
+}
+
+a:hover {
+	cursor: pointer;
+	text-decoration: none;
+	opacity: 0.7;
+}
 
 .btn{
 	border-radius: 80px;
@@ -315,6 +327,7 @@ button:hover,
     letter-spacing: 1rem;
     text-transform: uppercase;
 	color: #404952;
+	font-family: 'GT Walsheim Pro';
 }
 
 .fespi .my-name h2 i {
@@ -334,7 +347,7 @@ button:hover,
 .fespi .name-separator {
     width: 20%;
     height: 5px;
-    margin: 10px 40%;
+    margin: 10px auto;
     background-color: #DF3F65;
 }
 
@@ -399,21 +412,82 @@ button:hover,
 }
 
 .portfolio .owl-portfolio .item .pf-info h4 {
-	font-size: 1.2rem;
+	margin-bottom: 5px;
+	font-size: 1.5rem;
 	font-family: 'GT Walsheim Pro';
 	color: #404952;
 }
 
-.portfolio .owl-portfolio .item .pf-info .pf-url a {
-	color: #DF3F65;
+.portfolio .owl-portfolio .item .pf-info .pf-url {
+	margin-bottom: 10px;
 }
 
 .portfolio .owl-portfolio .item .pf-info .pf-tech {
-	font-family: 'Montserrat Light';
+    margin-bottom: 2px;
+	font-family: 'Montserrat Regular';
+}
+
+.portfolio .owl-portfolio .item .pf-info .pf-url a {
+	color: #DF3F65;
+	font-family: 'Montserrat Bold';	
 }
 
 .portfolio .owl-portfolio .item .pf-info .pf-desc {
 	color: #404952;
+	font-family: 'Montserrat Light';
+	font-size: 0.9rem;
+}
+
+.portfolio .owl-portfolio .owl-nav .owl-prev,
+.portfolio .owl-portfolio .owl-nav .owl-next {
+	position: absolute;
+    top: 40%;
+    outline: none;
+}
+
+.portfolio .owl-portfolio .owl-nav .owl-prev {
+	left: 2%;
+}
+
+.portfolio .owl-portfolio .owl-nav .owl-next {
+	right: 2%;
+}
+
+.portfolio .owl-portfolio .owl-nav .owl-prev span,
+.portfolio .owl-portfolio .owl-nav .owl-next span {
+	color: #DF3F65;
+	font-size: 6rem;
+}
+
+.portfolio .owl-portfolio .owl-dots {
+	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  	display: -ms-flexbox;  /* TWEENER - IE 10 */
+  	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  	display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+	margin-top: 15px;
+	align-items: center;
+    justify-content: center;
+}
+
+.portfolio .owl-portfolio .owl-dots .owl-dot {
+	outline: none;
+}
+
+.portfolio .owl-portfolio .owl-dots .owl-dot span {
+	background: none repeat scroll 0 0 #404952;
+    display: block;
+    height: 12px;
+    width: 12px;
+    margin: 5px 7px;
+    opacity: 0.5;
+    border-radius: 20px;
+}
+
+.portfolio .owl-portfolio .owl-dots .active span {
+	height: 18px;
+    width: 18px;
+	background: none repeat scroll 0 0 #DF3F65;
+	opacity: 1;
 }
 
 
@@ -422,47 +496,99 @@ button:hover,
     8.0 Things
    ===================== */
 
-   .things {
-		height: 100vh;
-		align-items: center;
-   }
+.things {
+	height: 100vh;
+	align-items: center;
+}
 
-   .things .things-left {
-   		text-align: right;
-   }
-
-   .things .things-left  ul li:first-of-type {
+.things .things-left {
+		text-align: left;
 		margin-bottom: 20px;
-   }
+}
 
-   .things .things-left h4 {
-   		font-size: 1.4rem;
-   		font-family: 'GT Walsheim Pro';
-   }
+.things .things-left  ul li:first-of-type {
+	margin-bottom: 20px;
+}
 
-   .things .things-left p:last-of-type {
-   		font-family: 'Montserrat Light';
-   	}
+.things .things-left h4 {
+		font-size: 1.4rem;
+		font-family: 'GT Walsheim Pro';
+}
 
-   	.things .things-right li {
-   		display: inline-block;
-   		font-family: 'Montserrat Light';
-   	}
+.things .things-left p:last-of-type {
+		font-family: 'Montserrat Light';
+	}
 
-   	.things .things-right li:not(last-of-type):after {
-		height: 14px;
-		vertical-align: middle;
-		margin: 0 5px 0 8px;
-	    font-size: 10px;
-	    display: inline-block;
-	    content: "\f111";
-   		font-family: 'Font Awesome 5 Free';
-   		color: #DF3F65;
-   	}
+	.things .things-right ul li {
+		display: inline-block;
+		font-family: 'Montserrat Light';
+    font-size: 1rem;
+	margin: 5px 0 0 0;
+	}
+
+	.things .things-right ul li:not(:last-of-type):after {
+	height: 14px;
+	vertical-align: middle;
+	margin: 0 5px 0 8px;
+    font-size: 10px;
+    display: inline-block;
+    content: "\f111";
+		font-family: 'Font Awesome 5 Free';
+		color: #DF3F65;
+	}
+
+	.things-separator-sm {
+		width: 20%;
+		height: 5px;
+		margin: 0 0 20px 15px;
+		background-color: #DF3F65;
+	}
 
 /* =====================
     9.0 Contact
    ===================== */      
+
+.contact {
+	height: 100vh;
+	align-items: center;
+}
+
+.contact .contact-container {
+	width: 80%;
+	margin: auto;
+	padding: 30px;
+	font-family: 'Montserrat Regular';
+	border: 2px solid #DF3F65;
+}
+
+.contact .contact-container .contact-intro h3 {
+	margin-bottom: 30px;
+	font-family: 'GT Walsheim Pro';
+	font-size: 3rem;
+	color: #DF3F65;
+
+}
+
+.contact .contact-container .contact-intro p {
+	margin-bottom: 15px;
+	font-family: 'Montserrat Regular';
+}
+
+.contact .contact-container .contact-form label {
+	margin: 15px 0 10px;
+	font-family: 'Montserrat Light';
+	color: #404952;
+}
+
+.contact .contact-container .contact-form input,
+.contact .contact-container .contact-form textarea {
+  	background-color: transparent;
+  	border: 1px solid #DF3F65;
+}
+
+.contact .contact-container .contact-form textarea {
+  	resize: none;
+}
 
 
 
@@ -482,6 +608,7 @@ Dark: #404952;
 */
 
 
+
 /* =====================
     13.0 BTT
    ===================== */
@@ -492,9 +619,18 @@ Dark: #404952;
     position: fixed;
     bottom: 0;
     right: 0;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
 }
+
+.btt i {
+	color: #DF3F65;
+    font-size: 2rem;
+}
+
+
+
+
 
 /* =====================
     14.0 Responsive
@@ -548,6 +684,16 @@ Dark: #404952;
 		text-align: right;
 		line-height: 11rem;
 	}
+
+   .things .things-left {
+   		text-align: right;
+   		margin-bottom: 0;
+   }
+
+   .things .things-right {
+   		padding: 20px 0 0 30px;
+   		border-left: 5px solid #DF3F65;
+   }   
 
 }
 
