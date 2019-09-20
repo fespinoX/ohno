@@ -48,9 +48,6 @@
          <i class="fas fa-angle-up"></i>
       </a>
       <!-- End BTT -->
-      
-      <!-- Main -->
-      <main>
          
          <h1 class="d-none">OHNO!</h1>
 
@@ -128,7 +125,7 @@
          <!-- End Bla -->
 
          <!-- Portfolio -->
-         <section class="portfolio" id="portfolio">
+         <section class="d-flex portfolio" id="portfolio">
             <h3 class="d-none">Portfolio</h3>
 
             <div id="owl-portfolio" class="owl-carousel owl-theme owl-portfolio">
@@ -383,9 +380,6 @@
          </section>
          <!-- End Contact -->
 
-         
-      </main>
-      <!-- End Main -->
       
       <!-- Footer -->
       <footer>
@@ -404,9 +398,16 @@
       <script src="js/vendor/jquery/jquery.waypoints.min.js"></script>
       <script src="js/vendor/jquery/jquery.counterup.min.js"></script>
       <script src="js/script.js"></script>
+
+      <script src="node_modules/panelsnap/src/panelsnap.js" defer></script>
       
       <script>
       new WOW().init();
+
+      jQuery(function () {
+        new PanelSnap();
+      })
+
       </script>
       
    </body>

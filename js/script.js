@@ -18,10 +18,8 @@ $(window).on("scroll", function() {
 });
 
 
-// CAROUSEL
+// OWL CAROUSEL
 
-
- 
     $("#owl-portfolio").owlCarousel({
    
         nav : true,
@@ -37,6 +35,7 @@ $(window).on("scroll", function() {
     });
  
 
-
-
 });
+
+
+
