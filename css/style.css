@@ -316,6 +316,7 @@ button:hover,
     text-transform: uppercase;
 	color: #404952;
 	font-family: 'GT Walsheim Pro';
+	text-align: center;
 }
 
 .fespi .my-name h2 i {
@@ -668,10 +669,6 @@ Dark: #404952;
     .fespi .my-name {
 	    margin: auto;
 	    padding: 0 15px;
-	}
-
-	.fespi .my-name h2 {
-		text-align: center;
 	}
 
 	.portfolio .owl-portfolio .item .pf-info {
