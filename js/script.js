@@ -26,7 +26,8 @@ $(window).on("scroll", function() {
         slideSpeed : 300,
         paginationSpeed : 400,
         items : 1, 
-        loop: true,
+        loop: false,
+        rewind: true,
         itemsDesktop : false,
         itemsDesktopSmall : false,
         itemsTablet: false,
@@ -36,13 +37,23 @@ $(window).on("scroll", function() {
     });
  
 
+ // Thank you message
+
   var thisPath = window.location.pathname;
+  var thanks = document.getElementById("thanks");
 
   if (thisPath == "/index.html") {
   
-    console.log("sent");
+    thanks.classList.remove("d-none");
   
   }
+
+  setTimeout(function(){ 
+
+    thanks.classList.add("d-none");
+
+  }, 30000);
+
 
 });
 

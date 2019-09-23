@@ -99,6 +99,19 @@ html span {
 	color: #404952;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 
 /* =====================
     2.0 General
@@ -212,6 +225,7 @@ button:hover,
 
 .cover {
 	height: 100vh;
+	min-height: 600px;
     padding-top: 15vh;
 }
 
@@ -296,12 +310,25 @@ button:hover,
   to {width: 20%;}
 }
 
+.cover .thanks {
+    margin-top: 50px;
+    text-align: center;
+    color: #EFCE5A;
+}
+
+.cover .thanks p {
+	color: #862BA4;
+	font-family: 'GT Walsheim Pro';
+    font-size: 1.2rem;
+}
+
 /* =====================
     5.0 Fespi
    ===================== */
 
 .fespi {
 	height: 100vh;
+	min-height: 600px;
     align-items: center;
 }
 
@@ -347,6 +374,7 @@ button:hover,
 
 .bla {
 	height: 100vh;
+	min-height: 600px;
 	align-items: center;
 }
 
@@ -382,14 +410,106 @@ button:hover,
 
 .portfolio {
 	height: 100vh;
+	min-height: 600px;
 	align-items: center;
 }
 
-.portfolio .owl-portfolio .item img{
+.portfolio .owl-portfolio .owl-item .item {
     display: block;
     width: 100%;
-    height: auto;
+    height: 90vh;
 }
+
+.portfolio .owl-portfolio .owl-item:nth-of-type(1) .item{
+	background: url("../img/portfolio/trailblazer.png");
+	background-size: cover;
+    background-position: top center;
+}
+
+.portfolio .owl-portfolio .owl-item:nth-of-type(2) .item{
+	background: url("../img/portfolio/onlinerepublic.png");
+	background-size: cover;
+    background-position: top center;
+}
+
+.portfolio .owl-portfolio .owl-item:nth-of-type(3) .item{
+	background: url("../img/portfolio/argentina.png");	
+	background-size: cover;
+    background-position: top center;
+}
+
+.portfolio .owl-portfolio .owl-item:nth-of-type(4) .item{
+	background: url("../img/portfolio/brontosaurio.png");	
+	background-size: cover;
+    background-position: top center;
+}
+
+.portfolio .owl-portfolio .owl-item:nth-of-type(5) .item{
+	background: url("../img/portfolio/g20-1.png");
+	background-size: cover;
+    background-position: top center;
+}
+
+.portfolio .owl-portfolio .owl-item:nth-of-type(6) .item{
+	background: url("../img/portfolio/g20-2.png");
+	background-size: cover;
+    background-position: top center;
+}
+
+.portfolio .owl-portfolio .owl-item:nth-of-type(7) .item{
+	background: url("../img/portfolio/yourmom.png");
+	background-size: cover;
+    background-position: top center;
+}
+
+.portfolio .owl-portfolio .owl-item:nth-of-type(8) .item{
+	background: url("../img/portfolio/dinos.png");
+	background-size: cover;
+    background-position: top center;
+}
+
+.portfolio .owl-portfolio .owl-item:nth-of-type(9) .item{
+	background: url("../img/portfolio/radiko.png");
+	background-size: cover;
+    background-position: top center;
+}
+
+.portfolio .owl-portfolio .owl-item:nth-of-type(10) .item{
+	background: url("../img/portfolio/lavandera.png");
+	background-size: cover;
+    background-position: top center;
+}
+
+.portfolio .owl-portfolio .owl-item:nth-of-type(11) .item{
+	background: url("../img/portfolio/randomator.png");
+	background-size: cover;
+    background-position: top center;
+}
+
+.portfolio .owl-portfolio .owl-item:nth-of-type(12) .item{
+	background: url("../img/portfolio/graphic.png");
+	background-size: cover;
+    background-position: top center;
+}
+
+.portfolio .owl-portfolio .owl-item:nth-of-type(13) .item{
+	background: url("../img/portfolio/zelda.png");
+	background-size: cover;
+    background-position: top center;
+}
+
+.portfolio .owl-portfolio .owl-item:nth-of-type(14) .item{
+	background: url("../img/portfolio/boardgames.png");
+	background-size: cover;
+    background-position: top center;
+}
+
+.portfolio .owl-portfolio .owl-item:nth-of-type(15) .item{
+	background: url("../img/portfolio/arduino.png");
+	background-size: cover;
+    background-position: top center;
+}
+
 
 .portfolio .owl-portfolio .item .pf-info {
 	width: 30%;
@@ -487,6 +607,7 @@ button:hover,
 
 .things {
 	height: 100vh;
+	min-height: 600px;
 	align-items: center;
 }
 
@@ -539,6 +660,7 @@ button:hover,
 
 .contact {
 	height: 100vh;
+	min-height: 600px;
 	align-items: center;
 }
 
@@ -575,26 +697,15 @@ button:hover,
   	border: 1px solid #DF3F65;
 }
 
+.contact .contact-container .contact-form .form-control:focus {
+  	box-shadow: 0 0 0 0.2rem rgba(222, 63, 100, 0.27);
+}
+
 .contact .contact-container .contact-form textarea {
   	resize: none;
 }
 
 
-
-/*
-
-Background: #E6E7E8;
-Red: #DF3F65;
-Orange: #E25744;
-Yellow: #EFCE5A;
-
-Cyan: #2494B9;
-Purple: #862BA4;
-Green: #67BE9B;
-
-Dark: #404952;
-
-*/
 
 
 
@@ -637,6 +748,37 @@ Dark: #404952;
 		font-size: 14px;
 	}
 
+	.contact .contact-container {
+		width: 100%;
+	}
+
+	.portfolio .owl-portfolio .owl-item .item {
+	    max-height: 500px;
+	}
+
+	.portfolio .owl-portfolio .item .pf-info {
+		width: 94%;
+	    margin: 15px auto 0;
+	    border: 1px solid #DF3F65;
+	    left: 2%;
+	}
+
+	.portfolio .owl-portfolio .owl-dots {
+		margin-top: 0;
+	}
+
+	.portfolio .owl-portfolio .owl-dots .owl-dot span {
+	    height: 8px;
+	    width: 8px;
+	}
+
+	.portfolio .owl-portfolio .owl-dots .active span {
+		height: 10px;
+	    width: 10px;
+		background: none repeat scroll 0 0 #DF3F65;
+		opacity: 1;
+	}
+
 }
 
 @media screen and (max-width: 576px) {
@@ -671,34 +813,6 @@ Dark: #404952;
 	    padding: 0 15px;
 	}
 
-	.portfolio .owl-portfolio .item .pf-info {
-		width: 95%;
-	    position: initial;
-	    margin: 15px auto 0;
-	    border: 1px solid #DF3F65;
-	}
-
-	.portfolio .owl-portfolio .owl-nav .owl-prev, 
-	.portfolio .owl-portfolio .owl-nav .owl-next {
-		top: 17%;
-	}
-
-	.portfolio .owl-portfolio .owl-dots {
-		margin-top: 0;
-	}
-
-	.portfolio .owl-portfolio .owl-dots .owl-dot span {
-	    height: 8px;
-	    width: 8px;
-	}
-
-	.portfolio .owl-portfolio .owl-dots .active span {
-		height: 10px;
-	    width: 10px;
-		background: none repeat scroll 0 0 #DF3F65;
-		opacity: 1;
-	}
-
 }
 
 
@@ -710,7 +824,7 @@ Dark: #404952;
 @media screen and (min-width: 768px) {
 
 	html {
-		font-size: 16px;
+		font-size: 18px;
 	}
 
 	.bla h3 {
@@ -733,8 +847,8 @@ Dark: #404952;
 @media screen and (min-width: 992px) {
 
 	.bla h3 {
-		font-size: 10rem;
-		line-height: 8rem;
+		font-size: 9rem;
+		line-height: 7rem;
 	}
 
 }
@@ -742,8 +856,8 @@ Dark: #404952;
 @media screen and (min-width: 1199px) {
 	
 	.bla h3 {
-		font-size: 12rem;
-		line-height: 7rem;
+		font-size: 11rem;
+		line-height: 6rem;
 	}
 
 }
