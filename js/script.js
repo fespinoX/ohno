@@ -36,6 +36,14 @@ $(window).on("scroll", function() {
     });
  
 
+  var thisPath = window.location.pathname;
+
+  if (thisPath == "/index.html") {
+  
+    console.log("sent");
+  
+  }
+
 });
 
 

@@ -172,66 +172,17 @@ button:hover,
 }
 
 .btn-primary{
-	background-color: #3de9be;
-	border:  solid 2px #3de9be;
-	color: #2b2f3a;
+	background-color: #DF3F65;
+	border:  solid 2px #DF3F65;
+	color: #E6E7E8;
 }
 
 .btn-primary:hover,
 .btn-primary:active{
 	background-color: transparent;
-	border:  solid 2px #3de9be;
-	color: #fff!important;
+	border:  solid 2px #DF3F65;
+	color: #DF3F65!important;
 }
-
-.btn-secondary{
-	background-color: #fff;
-	border:  solid 2px #3de9be;
-	color: #2b2f3a;
-}
-
-.btn-secondary:hover,
-.btn-secondary:active{
-	background-color: #3de9be;
-	border:  solid 2px #3de9be;
-
-}
-
-.btn-secondary-nb{
-	background-color: #fff;
-	border:  solid 2px #fff;
-	color: #2b2f3a;
-}
-
-.btn-secondary-nb:hover,
-.btn-secondary-nb:active{
-	background-color: #2b2f3a;
-	border:  solid 2px #fff;
-	color: #fff;
-}
-
-.btn-alt,
-.btn-alt:hover,
-.btn-alt:active{
-	padding: 7px 30px 7px 50px;
-	background-color: #20242f;
-	color: #3de9be;
-}
-
-
-.btn-alt i{
-    position: absolute;
-    left: 28px;
-    top: 11px;
-    -webkit-transition: .3s; /* Safari */
-    transition: .3s;
-}
-
-.btn-alt:hover i,
-.btn-alt:active i{
-	left: 24px;
-}
-
 
 
 
@@ -273,7 +224,27 @@ button:hover,
   	padding-top: 100%; /* 1:1 Aspect Ratio */
 	border-radius: 50%;
 	background: linear-gradient( -45deg, #EFCE5A, #EFCE5A 49%, transparent 49%, transparent 51%, #DF3F65 51% ); 
+
+	-webkit-animation-name: unblinking; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+	animation-name: unblinking;
+	animation-duration: 2s;
+
 }
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes unblinking {
+  from {transform: rotate(45eg);}
+  to {transform: rotate(0deg);}
+}
+
+/* Standard syntax */
+@keyframes unblinking {
+  from {transform: rotate(45deg);}
+  to {transform: rotate(0deg);}
+}
+
 
 .cover .mouth {
 	margin-top: 10vh;
@@ -301,11 +272,28 @@ button:hover,
 }
 
 .cover .mouth .chin {
-	width: 60%;
 	height: 20px;
 	margin: 10px auto;
     border-radius: 5px;
 	background-color: #404952;
+
+	-webkit-animation-name: grow; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+	animation-name: grow;
+	animation-duration: 2s;
+	width: 20%;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes grow {
+  from {width: 60%;}
+  to {width: 20%;}
+}
+
+/* Standard syntax */
+@keyframes grow {
+  from {width: 60%;}
+  to {width: 20%;}
 }
 
 /* =====================
@@ -323,7 +311,7 @@ button:hover,
 
 .fespi .my-name h2 { 
 	margin-bottom: 20px;
-	font-size: 6rem;
+	font-size: 5rem;
     letter-spacing: 1rem;
     text-transform: uppercase;
 	color: #404952;
@@ -664,7 +652,55 @@ Dark: #404952;
 
 
 @media screen and (max-width: 991px) {
+	
+	.cover {
+		padding-top: 25vh;
+	}
 
+	.cover .mouth {
+	    margin-top: 6vh;
+	}
+
+	.cover .mouth .chin {
+    	height: 10px;
+    }
+
+    .fespi .my-name {
+	    margin: auto;
+	    padding: 0 15px;
+	}
+
+	.fespi .my-name h2 {
+		text-align: center;
+	}
+
+	.portfolio .owl-portfolio .item .pf-info {
+		width: 95%;
+	    position: initial;
+	    margin: 15px auto 0;
+	    border: 1px solid #DF3F65;
+	}
+
+	.portfolio .owl-portfolio .owl-nav .owl-prev, 
+	.portfolio .owl-portfolio .owl-nav .owl-next {
+		top: 17%;
+	}
+
+	.portfolio .owl-portfolio .owl-dots {
+		margin-top: 0;
+	}
+
+	.portfolio .owl-portfolio .owl-dots .owl-dot span {
+	    height: 8px;
+	    width: 8px;
+	}
+
+	.portfolio .owl-portfolio .owl-dots .active span {
+		height: 10px;
+	    width: 10px;
+		background: none repeat scroll 0 0 #DF3F65;
+		opacity: 1;
+	}
 
 }
 
@@ -712,9 +748,5 @@ Dark: #404952;
 		font-size: 12rem;
 		line-height: 7rem;
 	}
-
-}
-
-@media screen and (min-width: 992px) and (max-width: 1199px) {
 
 }

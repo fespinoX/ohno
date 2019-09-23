@@ -3,8 +3,7 @@ $enviaPara = 'florencia.espino@gmail.com';
 
 $subject = 'Contact OHNO'; 
 
-//ruta relativa desde ESTE documento al html que quiero que se abra después de mandar el mail
-$enviado="../index.html";
+$enviado="../index.html#sent";
 
 
 
