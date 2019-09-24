@@ -532,7 +532,7 @@ button:hover,
 }
 
 .portfolio .owl-portfolio .item .pf-info .pf-tech {
-    margin-bottom: 2px;
+    margin-bottom: 7px;
 	font-family: 'Montserrat Regular';
 }
 
@@ -612,8 +612,8 @@ button:hover,
 }
 
 .things .things-left {
-		text-align: left;
-		margin-bottom: 20px;
+	text-align: left;
+	margin-bottom: 20px;
 }
 
 .things .things-left  ul li:first-of-type {
@@ -621,38 +621,51 @@ button:hover,
 }
 
 .things .things-left h4 {
-		font-size: 1.4rem;
-		font-family: 'GT Walsheim Pro';
+	font-size: 1.4rem;
+	font-family: 'GT Walsheim Pro';
 }
 
 .things .things-left p:last-of-type {
-		font-family: 'Montserrat Light';
-	}
+	font-family: 'Montserrat Light';
+}
 
-	.things .things-right ul li {
-		display: inline-block;
-		font-family: 'Montserrat Light';
-    font-size: 1rem;
+.things .things-right ul li {
+	display: inline-block;
+	font-family: 'Montserrat Light';
+	font-size: 1rem;
 	margin: 5px 0 0 0;
-	}
+}
 
-	.things .things-right ul li:not(:last-of-type):after {
+.things .things-right .thingies li:not(:last-of-type):after {
 	height: 14px;
 	vertical-align: middle;
 	margin: 0 5px 0 8px;
-    font-size: 10px;
-    display: inline-block;
-    content: "\f111";
-		font-family: 'Font Awesome 5 Free';
-		color: #DF3F65;
-	}
+	font-size: 10px;
+	display: inline-block;
+	content: "\f111";
+	font-family: 'Font Awesome 5 Free';
+	color: #DF3F65;
+}
 
-	.things-separator-sm {
-		width: 20%;
-		height: 5px;
-		margin: 0 0 20px 15px;
-		background-color: #DF3F65;
-	}
+.things .things-separator-sm {
+	width: 20%;
+	height: 5px;
+	margin: 0 0 20px 15px;
+	background-color: #DF3F65;
+}
+
+.things .things-right .links {
+	margin-top: 50px;
+}
+
+.things .things-right .links li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.things .things-right .links li a:hover i {
+	color: #862BA4;
+}
 
 /* =====================
     9.0 Contact
@@ -854,7 +867,10 @@ button:hover,
 }
 
 @media screen and (min-width: 1199px) {
-	
+	.html {
+		font-size: 20px;
+	}
+
 	.bla h3 {
 		font-size: 11rem;
 		line-height: 6rem;
