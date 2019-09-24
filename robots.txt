@@ -1,0 +1,20 @@
+User-agent: *
+
+Disallow: /agree
+Disallow: /bears
+Disallow: /bronto
+Disallow: /cgi-bin
+Disallow: /cositas_varias
+Disallow: /dinos
+Disallow: /fespicola
+Disallow: /fespicolalite
+Disallow: /fespicolatest
+Disallow: /fonditos
+Disallow: /fondos
+Disallow: /neon
+Disallow: /presentacion
+Disallow: /randomator
+Disallow: /seg_informatica
+Disallow: /xhtml
+Disallow: /zelda
+
